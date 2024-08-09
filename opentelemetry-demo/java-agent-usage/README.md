@@ -10,5 +10,13 @@
 -Dotel.exporter.otlp.headers=Authentication=<token>
 -Dotel.exporter.otlp.endpoint=<endpoint>
 ```
+或使用环境变量
+```
+JAVA_TOOL_OPTIONS=-javaagent:/opt/opentelemetry-javaagent.jar
+OTEL_RESOURCE_ATTRIBUTES=service.name=<appName>     //<appName> 为应用名。
+OTEL_EXPORTER_OTLP_HEADERS=Authentication=<token>
+OTEL_EXPORTER_OTLP_ENDPOINT=<endpoint>
+```
+
 3. 启动应用，端口号：8081（在`resources/application.properties`中修改）
 - 访问地址：`localhost:8081/user/async`
