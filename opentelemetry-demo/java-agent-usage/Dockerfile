@@ -2,7 +2,7 @@ FROM amazoncorretto:8-alpine-jre
 
 LABEL maintainer="yaokun@bwcxtech.com"
 
-COPY opentelemetry-javaagent.jar /opt
+COPY opentelemetry-javaagent.jar /opt/otel/
 
 COPY target/*.jar /home/app.jar
 WORKDIR /home
