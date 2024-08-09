@@ -12,7 +12,7 @@
 ```
 或使用环境变量
 ```
-JAVA_TOOL_OPTIONS=-javaagent:/opt/opentelemetry-javaagent.jar
+JAVA_TOOL_OPTIONS=-javaagent:/opt/opentelemetry-javaagent.jar    //请将路径修改为您文件下载的实际地址。
 OTEL_RESOURCE_ATTRIBUTES=service.name=<appName>     //<appName> 为应用名。
 OTEL_EXPORTER_OTLP_HEADERS=Authentication=<token>
 OTEL_EXPORTER_OTLP_ENDPOINT=<endpoint>
