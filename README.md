@@ -1,1 +1,1 @@
-# Java Demo
+# Opentelemetry Java Demo
